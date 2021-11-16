@@ -1,6 +1,6 @@
 import { Heading, Page } from "@shopify/polaris";
 const getRequest = () => {
-  fetch("./api/test")
+  fetch("/api/test")
     .then((response) => response.text())
     .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
